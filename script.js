@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io(https://livechat-testing.onrender.com);
 let username = "";
 
 // Function to generate a unique color based on the username
