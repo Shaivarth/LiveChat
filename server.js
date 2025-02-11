@@ -29,5 +29,5 @@ io.on("connection", (socket) => {
 
 const PORT = process.env.PORT || 3000;  // ✅ Use environment PORT if available
 server.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
