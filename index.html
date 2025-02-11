@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Real-Time Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Username & Password Popup -->
+    <div id="username-overlay">
+        <div class="username-box">
+            <h2>Join Live Chat</h2>
+            <input type="text" id="username-input" placeholder="Username" required>
+            <input type="password" id="password-input" placeholder="Password" required>  <!-- Password Input -->
+            <button id="enter-chat-btn">Join</button>
+            <p id="error-msg" style="color: red; display: none;">Incorrect Password. Try Again!</p>
+        </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <header class="navbar">
+        <div class="logo">SafeSpace</div>
+        <nav>
+            <a href="#">Mental Health Test</a>
+            <a href="#">Join Community</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About SafeSpace</a>
+        </nav>
+    </header>
+
+    <div class="chat-container" style="display: none;">  <!-- Hidden initially -->
+        <h2>Live Chat 🟢</h2>
+        <div id="chat-box"></div>
+        <form id="message-form">
+            <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
