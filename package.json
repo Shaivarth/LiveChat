@@ -1,7 +1,14 @@
 {
+  "name": "realtime-chat-app",
+  "version": "1.0.0",
+  "description": "A real-time chat app using Socket.io",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "express": "^4.21.2",
-    "nodejs": "^0.0.0",
-    "socket.io": "^4.8.1"
+    "socket.io": "^4.7.2",
+    "cors": "^2.8.5"
   }
 }
